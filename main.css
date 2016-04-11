@@ -142,12 +142,14 @@ ul {
     margin: 10px 0 0 0;
 }
 
-li {
-    margin: 0 0 5px 0;
+.social, li {
+    display: inline;
+    padding: 0 5px 0 0;
 }
 
-.social {
-    display: inline;
+#useful-links {
+    display: block;
+    margin: 0 0 5px 0;
 }
 
 a {
@@ -171,12 +173,17 @@ aside a {
     color: #000;
 }
 
+.content {
+    margin: 0 auto 0 175px;
+    width: 80%;
+}
+
 article:first-child {
     margin-top: 150px;
 }
 
 article {
-    margin: 0 10px 20px 190px;
+    margin: 0 auto 20px auto;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 15px;
@@ -186,6 +193,32 @@ article {
 
 article p {
     text-align: justify;
+}
+
+#pages {
+    margin: 30px auto 5px auto;
+    width: 200px;
+}
+
+.page-button {
+    background-color: #00aaaa;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 -2px 5px rgba(255,255,255, 0.5) inset;
+    border: 1px solid #00aaaa;
+    font-size: 0.9em;
+}
+
+.page-button:hover {
+    background-color: #00ced1;
+    border: 1px solid #00ced1;
+}
+
+#disabled {
+    pointer-events: none;
+    background-color: #999;
+    border-color: #999;
 }
 
 footer {
